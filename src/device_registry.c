@@ -7,6 +7,7 @@
 #include "devices/logitech_g633_g933_935.h"
 #include "devices/logitech_g930.h"
 #include "devices/logitech_gpro.h"
+#include "devices/logitech_gprox_wireless.h"
 #include "devices/logitech_zone_wired.h"
 #include "devices/roccat_elo_7_1_air.h"
 #include "devices/steelseries_arctis_1.h"
@@ -16,7 +17,7 @@
 
 #include <string.h>
 
-#define NUMDEVICES 13
+#define NUMDEVICES 14
 
 // array of pointers to device
 static struct device*(devicelist[NUMDEVICES]);
@@ -33,9 +34,10 @@ void init_devices()
     arctis_9_init(&devicelist[7]);
     arctis_pro_wireless_init(&devicelist[8]);
     gpro_init(&devicelist[9]);
-    zone_wired_init(&devicelist[10]);
-    elo71Air_init(&devicelist[11]);
-    g432_init(&devicelist[12]);
+    gprox_wireless_init(&devicelist[10]);
+    zone_wired_init(&devicelist[11]);
+    elo71Air_init(&devicelist[12]);
+    g432_init(&devicelist[13]);
 }
 
 int get_device(struct device* device_found, uint16_t idVendor, uint16_t idProduct)

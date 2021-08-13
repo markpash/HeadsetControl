@@ -23,6 +23,8 @@ set(SOURCE_FILES ${SOURCE_FILES}
     ${CMAKE_CURRENT_SOURCE_DIR}/logitech_g633_g933_935.h
     ${CMAKE_CURRENT_SOURCE_DIR}/logitech_gpro.c
     ${CMAKE_CURRENT_SOURCE_DIR}/logitech_gpro.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/logitech_gprox_wireless.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/logitech_gprox_wireless.h
     ${CMAKE_CURRENT_SOURCE_DIR}/logitech_zone_wired.c
     ${CMAKE_CURRENT_SOURCE_DIR}/logitech_zone_wired.h
     PARENT_SCOPE)
